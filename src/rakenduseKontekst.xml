@@ -7,6 +7,8 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
     
+    <context:property-placeholder location="classpath:korvpall.properties"/>
+    
     <bean id="minuEttekuulutus"
     	class="ee.sport.treening.PositiivneEttekuulutusTeenus">
     </bean>
@@ -24,11 +26,15 @@
 	<bean id="jalgpalliTreener"
 		class="ee.sport.treening.JalgpalliTreener">
 		<property name="ettekuulutusTeenus" ref="minuEttekuulutus"/>
+		<property name="emailiAadress" value="nikokovac@rockets.com"/>
+		<property name="meeskond" value="Müncheni Bayern"/>
 	</bean>
 
 	<bean id="korvpalliTreener"
 		class="ee.sport.treening.KorvpalliTreener">
 		<property name="ettekuulutusTeenus" ref="minuEttekuulutus"/>
+		<property name="emailiAadress" value="${korvpall.email}"/>
+		<property name="meeskond" value="${korvpall.meeskond}"/>
 	</bean>
 </beans>
 
