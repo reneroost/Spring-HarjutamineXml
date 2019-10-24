@@ -10,7 +10,7 @@
     <context:property-placeholder location="classpath:korvpall.properties"/>
     
     <bean id="minuEttekuulutus"
-    	class="ee.sport.treening.PositiivneEttekuulutusTeenus">
+    	class="ee.sport.treening.MituEttekuulutustTeenus">
     </bean>
 
 	<bean id="pesapalliTreener"
