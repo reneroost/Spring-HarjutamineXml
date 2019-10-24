@@ -23,9 +23,13 @@
 	
 	<bean id="jalgpalliTreener"
 		class="ee.sport.treening.JalgpalliTreener">
-		<constructor-arg ref="minuEttekuulutus"/>
+		<property name="ettekuulutusTeenus" ref="minuEttekuulutus"/>
 	</bean>
 
+	<bean id="korvpalliTreener"
+		class="ee.sport.treening.KorvpalliTreener">
+		<property name="ettekuulutusTeenus" ref="minuEttekuulutus"/>
+	</bean>
 </beans>
 
 

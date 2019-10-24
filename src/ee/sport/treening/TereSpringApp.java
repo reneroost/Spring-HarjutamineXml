@@ -9,10 +9,10 @@ public class TereSpringApp {
 	public static void main(String[] args) {
 		
 		ClassPathXmlApplicationContext kontekst = 
-				new ClassPathXmlApplicationContext("applicationContext.xml");
+				new ClassPathXmlApplicationContext("rakenduseKontekst.xml");
 		Treener treener =  null;
 		
-		System.out.println("Vali meeldiv trenn:\n1 - pesapall\n2 - kergejoustik\n3 - jalgpall");
+		System.out.println("Vali meeldiv trenn:\n1 - pesapall\n2 - kergejoustik");
 		Scanner klaviatuur = new Scanner(System.in);
 		int valik = klaviatuur.nextInt();
 		klaviatuur.close();
@@ -23,9 +23,6 @@ public class TereSpringApp {
 			break;
 		case 2:
 			treener = kontekst.getBean("kergejoustikuTreener", Treener.class);
-			break;
-		case 3:
-			treener = kontekst.getBean("jalgpalliTreener", Treener.class);
 			break;
 		}
 		

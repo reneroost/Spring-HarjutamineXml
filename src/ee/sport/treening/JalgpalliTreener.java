@@ -4,9 +4,12 @@ public class JalgpalliTreener implements Treener {
 	
 	public EttekuulutusTeenus ettekuulutusTeenus;
 	
-	public JalgpalliTreener() {}
+	public JalgpalliTreener() {
+		// System.out.println("JalgpalliTreener: ilma argumentideta konstruktori sees");
+	}
 	
-	public JalgpalliTreener(EttekuulutusTeenus ettekuulutusTeenus) {
+	public void setEttekuulutusTeenus(EttekuulutusTeenus ettekuulutusTeenus) {
+		// System.out.println("JalgpalliTreener: setteri meetodi sees - setEttekuulutusTeenus");
 		this.ettekuulutusTeenus = ettekuulutusTeenus;
 	}
 	
