@@ -15,6 +15,7 @@ public class TereSpringApp {
 		System.out.println("Vali meeldiv trenn:\n1 - pesapall\n2 - kergejoustik\n3 - jalgpall");
 		Scanner klaviatuur = new Scanner(System.in);
 		int valik = klaviatuur.nextInt();
+		klaviatuur.close();
 		
 		switch(valik) {
 		case 1:
@@ -29,6 +30,7 @@ public class TereSpringApp {
 		}
 		
 		System.out.println(treener.saaIgapaevaneTrenn());
+		System.out.println(treener.saaIgapaevaneEttekuulutus());
 		kontekst.close();
 	}
 

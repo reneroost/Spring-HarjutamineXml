@@ -6,17 +6,24 @@
     http://www.springframework.org/schema/beans/spring-beans.xsd
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
+    
+    <bean id="minuEttekuulutus"
+    	class="ee.sport.treening.PositiivneEttekuulutusTeenus">
+    </bean>
 
 	<bean id="pesapalliTreener"
 		class="ee.sport.treening.PesapalliTreener">
+		<constructor-arg ref="minuEttekuulutus"/>
 	</bean>
 	
 	<bean id="kergejoustikuTreener"
 		class="ee.sport.treening.KergejoustikuTreener">
+		<constructor-arg ref="minuEttekuulutus"/>
 	</bean>
 	
 	<bean id="jalgpalliTreener"
 		class="ee.sport.treening.JalgpalliTreener">
+		<constructor-arg ref="minuEttekuulutus"/>
 	</bean>
 
 </beans>
