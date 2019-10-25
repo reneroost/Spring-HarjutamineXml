@@ -1,6 +1,9 @@
-package ee.sport.treening;
+package ee.sport.appid;
 
-public class MinuApp {
+import ee.sport.KergejoustikuTreener;
+import ee.sport.Treener;
+
+public class AppMinu {
 
 	public static void main(String[] args) {
 		Treener treener = new KergejoustikuTreener();

@@ -1,4 +1,4 @@
-package ee.sport.treening;
+package ee.sport.teenused;
 
 public class MituEttekuulutustTeenus implements EttekuulutusTeenus {
 

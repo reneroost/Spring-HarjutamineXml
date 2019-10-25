@@ -1,10 +1,12 @@
-package ee.sport.treening;
+package ee.sport.appid;
 
 import java.util.Scanner;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-public class TereSpringApp {
+import ee.sport.Treener;
+
+public class AppTereSpring {
 	
 	public static void main(String[] args) {
 		

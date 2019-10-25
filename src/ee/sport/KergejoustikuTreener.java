@@ -1,4 +1,6 @@
-package ee.sport.treening;
+package ee.sport;
+
+import ee.sport.teenused.EttekuulutusTeenus;
 
 public class KergejoustikuTreener implements Treener {
 	
@@ -18,6 +20,14 @@ public class KergejoustikuTreener implements Treener {
 	@Override
 	public String saaIgapaevaneEttekuulutus() {
 		return ettekuulutusTeenus.saaEttekuulutus();
+	}
+	
+	public void teeMinuKaivitusTegevusi() {
+		System.out.println("KergejoustikuTreener: teeMinuKaivitusTegevusi()");
+	}
+	
+	public void teeMinuSulgemisTegevusiJouJou() {
+		System.out.println("KergejoustikuTreener: teeMinuSulgemisTegevusiJouJou()");
 	}
 
 }

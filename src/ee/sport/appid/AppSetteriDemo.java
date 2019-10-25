@@ -1,10 +1,13 @@
-package ee.sport.treening;
+package ee.sport.appid;
 
 import java.util.Scanner;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-public class SetteriDemoApp {
+import ee.sport.JalgpalliTreener;
+import ee.sport.KorvpalliTreener;
+
+public class AppSetteriDemo {
 
 	public static void main(String[] args) {
 		

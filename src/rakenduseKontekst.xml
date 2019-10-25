@@ -10,28 +10,28 @@
     <context:property-placeholder location="classpath:korvpall.properties"/>
     
     <bean id="minuEttekuulutus"
-    	class="ee.sport.treening.MituEttekuulutustTeenus">
+    	class="ee.sport.teenused.MituEttekuulutustTeenus">
     </bean>
 
 	<bean id="pesapalliTreener"
-		class="ee.sport.treening.PesapalliTreener">
+		class="ee.sport.PesapalliTreener">
 		<constructor-arg ref="minuEttekuulutus"/>
 	</bean>
 	
 	<bean id="kergejoustikuTreener"
-		class="ee.sport.treening.KergejoustikuTreener">
+		class="ee.sport.KergejoustikuTreener">
 		<constructor-arg ref="minuEttekuulutus"/>
 	</bean>
 	
 	<bean id="jalgpalliTreener"
-		class="ee.sport.treening.JalgpalliTreener">
+		class="ee.sport.JalgpalliTreener">
 		<property name="ettekuulutusTeenus" ref="minuEttekuulutus"/>
 		<property name="emailiAadress" value="nikokovac@rockets.com"/>
 		<property name="meeskond" value="Müncheni Bayern"/>
 	</bean>
 
 	<bean id="korvpalliTreener"
-		class="ee.sport.treening.KorvpalliTreener">
+		class="ee.sport.KorvpalliTreener">
 		<property name="ettekuulutusTeenus" ref="minuEttekuulutus"/>
 		<property name="emailiAadress" value="${korvpall.email}"/>
 		<property name="meeskond" value="${korvpall.meeskond}"/>

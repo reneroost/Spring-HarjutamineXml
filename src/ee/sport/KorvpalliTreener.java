@@ -1,14 +1,16 @@
-package ee.sport.treening;
+package ee.sport;
 
-public class JalgpalliTreener implements Treener {
-	
-	public EttekuulutusTeenus ettekuulutusTeenus;
+import ee.sport.teenused.EttekuulutusTeenus;
+
+public class KorvpalliTreener implements Treener {
+
+	private EttekuulutusTeenus ettekuulutusTeenus;
 	
 	private String emailiAadress;
 	private String meeskond;
 	
-	public JalgpalliTreener() {
-		// System.out.println("JalgpalliTreener: ilma argumentideta konstruktori sees");
+	public KorvpalliTreener() {
+		// System.out.println("KorvpalliTreener: ilma argumentideta konstruktori sees");
 	}
 	
 	public String getEmailiAadress() {
@@ -28,18 +30,18 @@ public class JalgpalliTreener implements Treener {
 	}
 
 	public void setEttekuulutusTeenus(EttekuulutusTeenus ettekuulutusTeenus) {
-		// System.out.println("JalgpalliTreener: setteri meetodi sees - setEttekuulutusTeenus");
+		// System.out.println("KorvpalliTreener: setteri meetodi sees - setEttekuulutusTeenus");
 		this.ettekuulutusTeenus = ettekuulutusTeenus;
 	}
 	
 	@Override
 	public String saaIgapaevaneTrenn() {
-		return "Soorita 120 tsenderdust viiekasti";
+		return "Soorita 100 kolmepunktiviset";
 	}
-	
+
 	@Override
 	public String saaIgapaevaneEttekuulutus() {
-		return "Lihtsalt tee seda: " + ettekuulutusTeenus.saaEttekuulutus();
+		return ettekuulutusTeenus.saaEttekuulutus();
 	}
-	
+
 }

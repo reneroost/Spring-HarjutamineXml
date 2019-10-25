@@ -1,4 +1,6 @@
-package ee.sport.treening;
+package ee.sport;
+
+import ee.sport.teenused.EttekuulutusTeenus;
 
 public class PesapalliTreener implements Treener {
 	
